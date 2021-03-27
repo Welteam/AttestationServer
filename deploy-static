@@ -11,7 +11,7 @@ fi
 
 ./process-static $fd
 
-remote=root@attestation.app
+remote=root@staging.attestation.app
 active=$(ssh $remote readlink /srv/attestation.app)
 
 if [[ $active = /srv/attestation.app_a ]]; then
